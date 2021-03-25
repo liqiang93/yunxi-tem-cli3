@@ -1,5 +1,5 @@
 <template>
   <div class="index">
-    这是根目录文件
+    这里是menu1
   </div>
 </template>
