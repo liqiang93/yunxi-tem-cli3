@@ -1,6 +1,6 @@
 module.exports = {
   "hooks": {
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+    "pre-commit": "eslint src/**/*{.js,.vue}",
     "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
   }
 }
