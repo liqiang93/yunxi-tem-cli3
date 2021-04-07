@@ -5,13 +5,17 @@
 ## 项目初始化
 
 ```bash
-npm install
+运行开发环境：npm run dev
 
-npm run serve
+运行测试环境：npm run test
 
-npm run build
+运行生态环境：npm run prod
 
-npm run lint
+打包开发环境：npm run dev-build
+
+打包测试环境：npm run build
+
+打包生态环境：npm run pro-build
 ```
 
 ## 开发
@@ -76,6 +80,10 @@ project
 |   |   | index.js   // 所有接口
 |   |   | http.js  // axios二次封装
 |   |
+|   |____api    // 接口目录
+│   |   |____auth    // 接口模块
+│   |        |____auth.js // 接口文件
+|   |
 |   |____store     // vuex数据
 |   |   | index.js
 |   |
@@ -88,6 +96,9 @@ project
 │   vue.config.js  // vue-cli3主配置
 │   babel.config.js// babel配置
 │   .eslintrc.js   // eslint配置
+│   .env   // 测试环境配置
+│   .env.development  // 开发环境配置
+│   .env.production   // 生态环境及线上环境配置
 │   .prettierrc.js // perttier配置
 │   package.json   // npm配置
 │   README.md      // 项目说明
