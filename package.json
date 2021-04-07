@@ -9,7 +9,7 @@
     "build": "vue-cli-service build --mode test",
     "dev-build": "vue-cli-service build --mode development",
     "pro-build": "vue-cli-service build --mode production",
-    "lint": "eslint --fix --ext .js,.vue src",
+    "lint": "echo 'no lint'",
     "release": "standard-version"
   },
   "dependencies": {
