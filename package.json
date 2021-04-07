@@ -23,8 +23,7 @@
     ],
     "src/**/*.{js,vue}": [
       "prettier --write",
-      "vue-cli-service lint",
-      "git add"
+      "eslint --fix"
     ],
     "src/**/*.scss": [
       "prettier --write"
