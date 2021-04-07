@@ -12,9 +12,10 @@
     "lint": "echo 'no lint'",
     "release": "standard-version"
   },
-  "hooks": {
-    "pre-commit": "eslint src/**/*{.js,.vue}",
-    "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "lint-staged": {
     "src/**/*.html": [
@@ -22,7 +23,7 @@
     ],
     "src/**/*.{js,vue}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint"
     ],
     "src/**/*.scss": [
       "prettier --write"
