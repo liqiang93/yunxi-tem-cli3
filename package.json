@@ -12,11 +12,6 @@
     "lint": "eslint --fix --ext .js,.vue src",
     "release": "standard-version"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    }
-  },
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
@@ -54,6 +49,11 @@
     "sass-loader": "^10.1.1",
     "standard-version": "^9.2.0",
     "vue-router-invoke-next-webpack-plugin": "^1.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   },
   "eslintConfig": {
     "root": true,
