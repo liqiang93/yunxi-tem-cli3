@@ -12,11 +12,6 @@
     "lint": "eslint --fix --ext .js,.vue src",
     "release": "standard-version"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "lint-staged": {
     "src/**/*.html": [
       "prettier --write"

@@ -34,7 +34,8 @@ npm run serve
 - plugins 自己或第三方插件,包括但不限于components、directives、filters、third lib
 - views 所有路由页面。原则：views，重component
 - components 所有组件。包括原子组件、业务公用组件、页面独有组件
-- server api引入入口
+- server http引入入口
+- api 接口存放地址
 - assets sass、图片资源入口，不常修改数据
 - utils 工具文件夹
 - store 标准vuex格式，非必须
@@ -48,6 +49,11 @@ project
 │   │   app.vue    // 主页面
 │   │   main.js    // 主入口
 |   |   router.js  // 所有路由
+│   │
+|   |____api    // 接口目录
+│   |   |____testApi    // 模块接口目录
+│   |        |____test // 接口
+│   |   |____index    // 所有接口
 │   │
 │   |____assets    // css、image、svg等资源
 │   |   |____css   // 所有sass资源
@@ -77,18 +83,15 @@ project
 |   |   | filters.js  // 所有Vue过滤
 |   |
 |   |____server    // 接口层
-|   |   | index.js   // 所有接口
+|   |   | api-url.js   // 环境接口
 |   |   | http.js  // axios二次封装
-|   |
-|   |____api    // 接口目录
-│   |   |____auth    // 接口模块
-│   |        |____auth.js // 接口文件
 |   |
 |   |____store     // vuex数据
 |   |   | index.js
 |   |
 |   |____utils     // 工具层
-|   |   | config.js// 配置文件，包括常量配置
+|   |   | config.js // 配置文件，包括常量配置
+|   |   | initMqtt.js // paho-mqtt
 |
 └───public         // 公用文件，不经过webpack处理
 │   │   favicon.ico
@@ -100,6 +103,8 @@ project
 │   .env.development  // 开发环境配置
 │   .env.production   // 生态环境及线上环境配置
 │   .prettierrc.js // perttier配置
+│   .cz-config.js // git cz 提交语言汉化
+│   CHANGELOG.md  // 输出提交版本文档
 │   package.json   // npm配置
 │   README.md      // 项目说明
 ```
