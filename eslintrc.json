@@ -98,7 +98,6 @@
     "no-undef-init": "error",
     "no-undefined": "error",
     "no-use-before-define": "off",
-    // Node.js and CommonJS
     "callback-return": "off",
     "global-require": "error",
     "handle-callback-err": "error",
@@ -109,7 +108,6 @@
     "no-process-exit": "error",
     "no-restricted-modules": "error",
     "no-sync": "error",
-    // Stylistic Issues
     "array-bracket-spacing": "error",
     "block-spacing": "error",
     "brace-style": "error",
