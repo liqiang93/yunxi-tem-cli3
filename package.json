@@ -12,6 +12,22 @@
     "lint": "echo 'no lint'",
     "release": "standard-version"
   },
+  "hooks": {
+    "pre-commit": "eslint src/**/*{.js,.vue}",
+    "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+  },
+  "lint-staged": {
+    "src/**/*.html": [
+      "prettier --write"
+    ],
+    "src/**/*.{js,vue}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "src/**/*.scss": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
