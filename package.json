@@ -12,18 +12,6 @@
     "lint": "eslint --fix --ext .js,.vue src",
     "release": "standard-version"
   },
-  "lint-staged": {
-    "src/**/*.html": [
-      "prettier --write"
-    ],
-    "src/**/*.{js,vue}": [
-      "prettier --write",
-      "eslint --fix"
-    ],
-    "src/**/*.scss": [
-      "prettier --write"
-    ]
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-customizable"
