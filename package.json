@@ -21,10 +21,7 @@
     "src/**/*.html": [
       "prettier --write"
     ],
-    "src/**/*.{js,vue}": [
-      "prettier --write",
-      "eslint"
-    ],
+    "src/**/*.{js,vue}": [ "npm run eslint" ],
     "src/**/*.scss": [
       "prettier --write"
     ]
