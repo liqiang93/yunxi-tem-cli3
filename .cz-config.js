@@ -34,14 +34,12 @@ module.exports = {
   // scope 类型，针对 React 项目
   scopes: [
     ['components', '组件相关'],
-    ['hooks', 'hook 相关'],
-    ['hoc', 'HOC'],
+    ['assets', '资源相关'],
+    ['views', 'UI层 相关'],
     ['utils', 'utils 相关'],
-    ['antd', '对 antd 主题的调整'],
-    ['element-ui', '对 element-ui 主题的调整'],
-    ['styles', '样式相关'],
-    ['deps', '项目依赖'],
-    ['auth', '对 auth 修改'],
+    ['plugins', '第三方插件相关'],
+    ['server', '接口层相关'],
+    ['store', 'vuex数据相关'],
     ['other', '其他修改'],
     // 如果选择 custom ,后面会让你再输入一个自定义的 scope , 也可以不设置此项， 把后面的 allowCustomScopes 设置为 true
     ['custom', '以上都不是？我要自定义'],
