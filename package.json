@@ -12,6 +12,23 @@
     "lint": "echo 'no lint'",
     "release": "standard-version"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.html": [
+      "prettier --write"
+    ],
+    "src/**/*.{js,vue}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "src/**/*.scss": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
