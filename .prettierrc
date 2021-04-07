@@ -4,6 +4,7 @@
   "useTabs": false,
   "semi": false,
   "trailingComma": "es5",
+  "end-of-line": "lf",
   "htmlWhitespaceSensitivity": "ignore",
   "vetur.format.defaultFormatterOptions": {
     "prettier": {
