@@ -13,15 +13,13 @@
     "release": "standard-version"
   },
   "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "hooks": { "pre-commit": "lint-staged" }
   },
   "lint-staged": {
     "src/**/*.html": [
       "prettier --write"
     ],
-    "src/**/*.{js,vue}": [ "npm run eslint" ],
+    "src/**/*.{js,vue}": [ "prettier --write", "vue-cli-service lint", "git add" ],
     "src/**/*.scss": [
       "prettier --write"
     ]
