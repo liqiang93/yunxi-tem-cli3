@@ -9,7 +9,8 @@
     "build": "vue-cli-service build --mode test",
     "dev-build": "vue-cli-service build --mode development",
     "pro-build": "vue-cli-service build --mode production",
-    "lint": "eslint --fix --ext .js,.vue src"
+    "lint": "eslint --fix --ext .js,.vue src",
+    "release": "standard-version"
   },
   "husky": {
     "hooks": {
@@ -27,6 +28,11 @@
     "src/**/*.scss": [
       "prettier --write"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -47,7 +53,9 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
     "chalk": "^4.1.0",
+    "commitlint-config-cz": "^0.13.2",
     "compression-webpack-plugin": "^7.1.2",
+    "cz-customizable": "^6.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",
@@ -61,6 +69,7 @@
     "prettier": "^2.2.1",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
+    "standard-version": "^9.2.0",
     "vue-router-invoke-next-webpack-plugin": "^1.0.0"
   },
   "eslintConfig": {
