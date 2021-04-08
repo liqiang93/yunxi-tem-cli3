@@ -11,13 +11,22 @@ module.exports = {
   extends: [
     "plugin:vue/vue3-essential",
     "eslint:recommended",
-    '@vue/standard'
+    '@vue/standard',
+    "@vue/prettier"
   ],
   parserOptions: {
     sourceType: 'module',
     parser: 'babel-eslint' // 解析器，默认使用 Espree
   },
   rules: {
-
+    "generator-star-spacing": "off",
+    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "vue/no-parsing-error": [
+      2,
+      {
+        "unexpected-solidus-in-tag": false
+      }
+    ]
   }
 }

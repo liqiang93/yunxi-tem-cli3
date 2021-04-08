@@ -23,15 +23,15 @@ export default {
       let params = {
         db: 'zjnf5',
         login: '潇洒哥',
-        password: '123456'
+        password: '123456',
       }
 
       //测试接口：
       this.$api.test.testPost(params)
-          .then(res => {
-            //这里放接口通了之后你需要的一些逻辑
-            console.log(res)
-          })
+        .then(res => {
+          //这里放接口通了之后你需要的一些逻辑
+          console.log(res)
+        })
     },
 
     listenNewMessage() {
@@ -42,6 +42,6 @@ export default {
     onComment(message) {
       console.log(message)
     },
-  }
+  },
 }
 </script>

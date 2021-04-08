@@ -1,8 +1,9 @@
 # .eslintignore
 
-public
-dist
-node_modules
+/public/
+/node_modules/
 
 /build/
 /config/
+/dist/
+/*.js
