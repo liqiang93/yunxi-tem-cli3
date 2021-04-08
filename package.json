@@ -12,8 +12,11 @@
     "lint": "echo 'no lint'",
     "release": "standard-version"
   },
-  "gitHooks": {
-    "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "src/**/*.html": [
