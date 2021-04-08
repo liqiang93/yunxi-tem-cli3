@@ -6,6 +6,16 @@
   "trailingComma": "es5",
   "end-of-line": "lf",
   "htmlWhitespaceSensitivity": "ignore",
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "auto",
+  "insertPragma": false,
+  "jsxBracketSameLine": true,
+  "jsxSingleQuote": false,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "singleQuote": false,
   "vetur.format.defaultFormatterOptions": {
     "prettier": {
       "singleQuote": true,
