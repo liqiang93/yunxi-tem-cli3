@@ -12,11 +12,9 @@
     "lint": "echo 'no lint'",
     "release": "standard-version"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
+  "gitHooks": {
+    "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "src/**/*.html": [
@@ -69,11 +67,6 @@
     "sass-loader": "^10.1.1",
     "standard-version": "^9.2.0",
     "vue-router-invoke-next-webpack-plugin": "^1.0.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    }
   },
   "browserslist": [
     "> 1%",
