@@ -9,13 +9,13 @@
     "build": "vue-cli-service build --mode test",
     "dev-build": "vue-cli-service build --mode development",
     "pro-build": "vue-cli-service build --mode production",
-    "lint": "eslint --ext .js,.vue package",
-    "lint --fix": "eslint --ext .js,.vue package --fix",
+    "lint": "echo 'no lint'",
     "release": "standard-version"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "pretty-quick --staged",
+      "commit-msg": "vcm"
     }
   },
   "lint-staged": {
