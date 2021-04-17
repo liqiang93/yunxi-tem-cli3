@@ -22,6 +22,7 @@ export default {
         login: "潇洒哥",
         password: "123456",
       }
+
       // 测试接口：
       this.$api.test.testPost(params).then((res) => {
         // 这里放接口通了之后你需要的一些逻辑

@@ -9,22 +9,24 @@
     "build": "vue-cli-service build --mode test",
     "dev-build": "vue-cli-service build --mode development",
     "pro-build": "vue-cli-service build --mode production",
-    "lint": "echo 'no lint'",
+    "lint": "vue-cli-service lint",
     "release": "standard-version"
   },
   "gitHooks": {
-    "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "src/**/*.html": [
-      "prettier --write"
+      "prettier --write",
+      "vue-cli-service lint"
     ],
     "src/**/*.{js,vue}": [
       "prettier --write",
+      "vue-cli-service lint",
       "eslint --fix"
     ],
     "src/**/*.scss": [
+      "vue-cli-service lint",
       "prettier --write"
     ]
   },
@@ -67,6 +69,11 @@
     "sass-loader": "^10.1.1",
     "standard-version": "^9.2.0",
     "vue-router-invoke-next-webpack-plugin": "^1.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   },
   "browserslist": [
     "> 1%",

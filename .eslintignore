@@ -5,6 +5,6 @@
 
 /build/
 /config/
-/dist/
-/*.js
+dist
+
 /.cz-config.js

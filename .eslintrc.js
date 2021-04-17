@@ -4,65 +4,24 @@ module.exports = {
     node: true,
     browser: true
   },
-  extends: [
-    "plugin:vue/vue3-essential",
-    "eslint:recommended",
-    '@vue/standard',
-    "@vue/prettier"
-  ],
+  extends: ['plugin:vue/vue3-essential', 'eslint:recommended', '@vue/prettier'],
   parserOptions: {
-    sourceType: 'module',
     parser: 'babel-eslint' // 解析器，默认使用 Espree
   },
   rules: {
-    'template-curly-spacing': 'off',
-    indent: 'off',
-    camelcase: 'off',
-    'comma-dangle': [
-      'warn',
-      {
-        arrays: 'always-multiline',
-        objects: 'always-multiline',
-        imports: 'always-multiline',
-        exports: 'always-multiline',
-        functions: 'never',
-      },
-    ],
-    eqeqeq: 'warn',
-    'generator-star-spacing': 'off',
-    'handle-callback-err': 'warn',
-    'import/no-duplicates': 'error',
-    'no-debugger': 'error',
-    'no-eval': 'warn',
-    'no-mixed-operators': 'warn',
-    'no-new': 'warn',
-    'no-new-wrappers': 'warn',
-    'no-unreachable': 'error',
-    'no-redeclare': 'error',
-    'no-return-assign': 'warn',
-    'no-sequences': 'warn',
-    'no-tabs': 'warn',
-    'no-undef': 'error',
-    'no-unused-expressions': 'error',
-    'no-unused-vars': 'error',
-    'no-useless-call': 'error',
-    'no-useless-constructor': 'error',
-    'no-useless-escape': 'warn',
-    'node/no-deprecated-api': 'warn',
-    'one-var': 'error',
-    'prefer-promise-reject-errors': 'warn',
-    'space-before-function-paren': [
-      'error',
-      {
-        anonymous: 'always',
-        named: 'never',
-        asyncArrow: 'always',
-      },
-    ],
-    'vue/no-side-effects-in-computed-properties': 'warn',
-    'vue/valid-v-bind': 'warn',
-    'vue/valid-v-for': 'warn',
-    'vue/valid-v-if': 'warn',
-    'vue/valid-v-on': 'warn',
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'vue/no-v-html': 'off',
   },
+  overrides: [
+    {
+      files: [
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)',
+      ],
+      env: {
+        jest: true,
+      },
+    },
+  ],
 }
