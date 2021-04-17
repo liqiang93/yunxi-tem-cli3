@@ -8,7 +8,6 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-essential',
     'plugin:vue/vue3-strongly-recommended',   //vue 插件推荐规则
-    'plugin:vue/vue3-recommended',
     '@vue/prettier',
   ],
   parserOptions: {
