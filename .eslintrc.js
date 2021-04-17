@@ -18,7 +18,18 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'vue/no-v-html': 'off'
+    // allow async-await
+    'generator-star-spacing': 'off',
+    'space-before-function-paren': [
+      'error',
+      {
+        anonymous: 'always',
+        named: 'never',
+        asyncArrow: 'always'
+      }
+    ],
+    'prefer-promise-reject-errors': ['off', { allowEmptyReject: true }],
+    'no-new': 'off'
   },
   overrides: [
     {

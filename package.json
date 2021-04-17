@@ -3,11 +3,11 @@
   "version": "0.1.2",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve --mode development",
+    "serve": "vue-cli-service serve --mode development",
     "test": "vue-cli-service serve --mode test",
     "prod": "vue-cli-service serve --mode production",
     "build": "vue-cli-service build --mode test",
-    "dev-build": "vue-cli-service build --mode development",
+    "serve-build": "vue-cli-service build --mode development",
     "pro-build": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint",
     "release": "standard-version"
@@ -56,7 +56,6 @@
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-html": "^6.1.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.1",
