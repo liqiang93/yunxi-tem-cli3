@@ -12,10 +12,8 @@
     "lint": "vue-cli-service lint",
     "release": "standard-version"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-    }
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "src/**/*.html": [
@@ -44,7 +42,6 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
-    "@commitlint/prompt-cli": "^12.1.1",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",

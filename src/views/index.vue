@@ -31,9 +31,7 @@ export default {
     },
 
     listenNewMessage() {
-      MessageBroker.connect("livestream/" +
-
-        "c394b71891b141bdb925ff24313435eb")
+      MessageBroker.connect("livestream/" + "c394b71891b141bdb925ff24313435eb")
       MessageBroker.on("comment", this.onComment, this)
     },
 
