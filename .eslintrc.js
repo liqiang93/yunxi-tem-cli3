@@ -4,8 +4,9 @@ module.exports = {
     node: true,
     browser: true
   },
-  extends: ['plugin:vue/vue3-essential', 'eslint:recommended', '@vue/prettier'],
+  extends: ['plugin:vue/vue3-essential', 'plugin:vue/vue3-recommended', 'eslint:recommended', '@vue/prettier'],
   parserOptions: {
+    "sourceType": "module",
     parser: 'babel-eslint' // 解析器，默认使用 Espree
   },
   rules: {
