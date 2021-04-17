@@ -25,7 +25,7 @@ export default {
 
       // 测试接口：
       this.$api.test.testPost(params).then((res) => {
-        // 这里放接口通了之后你需要的一些逻辑
+        // 这里放接口通了v  vvvvvvv       之后你需要的一些逻辑
         console.log(res)
       })
     },
