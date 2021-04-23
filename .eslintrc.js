@@ -6,9 +6,10 @@ module.exports = {
     es6: true,
   },
   extends: [
-    'plugin:vue/vue3-essential',
     'plugin:vue/vue3-recommended',
-    '@vue/prettier'
+    "plugin:vue/vue3-essential",
+    "eslint:recommended",
+    "@vue/prettier",
   ],
   parserOptions: {
     sourceType: 'module',

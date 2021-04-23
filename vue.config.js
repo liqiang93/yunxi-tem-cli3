@@ -1,6 +1,10 @@
 const Invoke = require('vue-router-invoke-next-webpack-plugin');
 const path = require('path');
 
+function resolve(dir) {
+  return path.join(__dirname, dir)
+}
+
 module.exports = {
   // omit other options...
   configureWebpack(config) {
