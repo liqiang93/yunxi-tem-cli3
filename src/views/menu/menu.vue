@@ -1,15 +1,21 @@
 <template>
   <div class="index">
-    <router-holder :router-name="$route.name"></router-holder>
-    <div>这是menu</div>
+    <div @click="handleNext">这是menu</div>
   </div>
 </template>
 
 <script>
-import RouterHolder from "@/views/router-holder"
+import { useRouter } from "vue-router"
+
 export default {
-  components: {
-    RouterHolder,
+  setup() {
+    const router = useRouter()
+    const handleNext = () => {
+      router.push(`/menu/menu1`)
+    }
+    return {
+      handleNext,
+    }
   },
 }
 </script>
