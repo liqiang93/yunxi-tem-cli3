@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <router-holder :router-name="$route.name"></router-holder>
-    <div>这是menu</div>
+    <div>这里是menu1</div>
   </div>
 </template>
 

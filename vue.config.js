@@ -1,5 +1,5 @@
-const path = require('path')
-const Invoke = require('vue-router-invoke-next-webpack-plugin')
+const Invoke = require('vue-router-invoke-next-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   // omit other options...
@@ -9,8 +9,8 @@ module.exports = {
     config.plugins.push(
       new Invoke({
         // should be the same as resolve.alias.Invoke
-        root: path.resolve(process.cwd(), 'src/views'),
-      }),
+        root: path.resolve(process.cwd(), 'src/views')
+      })
     )
-  },
+  }
 }
