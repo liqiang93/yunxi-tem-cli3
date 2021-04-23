@@ -15,7 +15,21 @@ export const router = createRouter({
       path: "/menu",
       component: () => import("Invoke/menu/menu.vue"),
 
-      children: [],
+      children: [
+        {
+          name: "menu-menu1",
+          path: "menu1",
+          component: () => import("Invoke/menu/menu1/menu1.vue"),
+
+          children: [
+            {
+              name: "menu-menu1-menu11",
+              path: "menu11",
+              component: () => import("Invoke/menu/menu1/menu1-1/index.vue"),
+            },
+          ],
+        },
+      ],
     },
     {
       name: "nest",
